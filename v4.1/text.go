@@ -297,13 +297,13 @@ func (t *Text) Draw() {
 	}
 
 	// JPF: blending blocks other data in buffer generated without blending
-	gl.Enable(gl.BLEND)
-	gl.BlendEquation(gl.FUNC_ADD)
-	gl.BlendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA)
+	//gl.Enable(gl.BLEND)
+	//gl.BlendEquation(gl.FUNC_ADD)
+	//gl.BlendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA)
 	gl.BindVertexArray(t.vao)
 	gl.DrawElements(gl.TRIANGLES, drawCount, gl.UNSIGNED_INT, nil)
 	gl.BindVertexArray(0)
-	gl.Disable(gl.BLEND)
+	//gl.Disable(gl.BLEND)
 }
 
 func (t *Text) BeginFadeOut() {
