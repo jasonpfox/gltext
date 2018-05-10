@@ -5,10 +5,11 @@
 package v41
 
 import (
-	"github.com/4ydx/gltext"
+	"image"
+
 	"github.com/go-gl/gl/v4.1-core/gl"
 	"github.com/go-gl/mathgl/mgl32"
-	"image"
+	"github.com/jasonpfox/gltext"
 )
 
 var fontVertexShaderSource string = `

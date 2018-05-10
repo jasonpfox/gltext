@@ -5,9 +5,10 @@
 package v41
 
 import (
-	"github.com/4ydx/gltext"
-	"github.com/go-gl/mathgl/mgl32"
 	"testing"
+
+	"github.com/go-gl/mathgl/mgl32"
+	"github.com/jasonpfox/gltext"
 )
 
 func TestHasRune(t *testing.T) {
